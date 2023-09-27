@@ -1,0 +1,45 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --font-light: 400;
+  --font-heavy: 700;
+  --color-h1: rgb(0 0 26);
+  --color-h2: rgb(232 171 83);
+  --color-p: rgb(178 179 199);
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+body {
+  padding: 2.5% 20%;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+body p {
+  color: var(--color-p);
+  line-height: 1.5em;
+  font-size: 1em;
+  margin: 0;
+}
+
+body h2 {
+  color: var(--color-h2);
+  margin: 0;
+}
+
+body h4 {
+  letter-spacing: -0.05rem;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+body h1 {
+  font-size: 3.6rem;
+  margin: 0;
+  letter-spacing: -0.15rem;
+}

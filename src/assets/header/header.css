@@ -1,0 +1,27 @@
+.header, .header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header img {
+    width: 60px;
+}
+
+.header a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: rgb(115 114 119);
+    font-weight: 500;
+}
+
+.header a:hover {
+    color: rgb(204, 133, 0);
+}
+
+.header__menu {
+    gap: 2em;
+}

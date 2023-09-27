@@ -1,0 +1,149 @@
+.hero {
+    display: grid;
+    margin-top: 2em;
+    gap: 3em;
+    grid-template-columns: 33% 33% 33%;
+    /* article new rankings */
+    grid-template-areas:
+        "article article new"
+        "article article new"
+        "rankings rankings rankings"
+}
+
+
+
+.hero__article {
+    grid-area: article;
+}
+
+.hero__article__text {
+    display: flex;
+    margin-top: 1.5em;
+    gap: 2em;
+}
+
+.hero__article-title {
+    width: 50%;
+}
+
+.hero__article__cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__article__cta-btn {
+    text-transform: uppercase;
+    font-style: var(--font-family);
+    background-color: var(--color-h2);
+    border: none;
+    padding: 1.5em 2em;
+    letter-spacing: 0.3em;
+    color: #fff;
+    font-weight: 800;
+    width: 50%;
+    transition: transform 0.3s ease;
+
+
+}
+
+.hero__article__cta-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-h1);
+    transform: scale(1.1);
+}
+
+
+.hero__new {
+    background-color: rgb(0 0 26);
+    color: #fff;
+    grid-area: new;
+    padding: 0 2em;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero__new h2 {
+    margin: 0.75em 0;
+    font-size: 3rem;
+}
+
+/* .hero p {
+    margin-top: 0.75rem;
+    padding-bottom: 1rem;
+} */
+
+.hero__new div {
+    border-bottom: 1px solid gray;
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
+    /* padding-bottom: 1rem; */
+}
+
+.hero__new div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hero h4:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.hero__rankings {
+    display: flex;
+    grid-area: rankings;
+}
+
+.hero__rankings-preview {
+    display: grid;
+    grid-column-gap: 2em;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "image number"
+        "image title"
+        "image desc";
+    padding-right: 1em;
+
+    transition: transform 0.3s ease;
+}
+
+.hero__rankings-preview:hover {
+    transform: scale(1.2);
+}
+
+.hero__rankings-preview h2 {
+    color: var(--color-p);
+    font-size: 2.5em;
+}
+
+.hero__rankings-preview h4 {
+    color: var(--color-h1);
+}
+
+.hero__rankings-preview p {
+    color: var(--color-p);
+    align-self: end;
+}
+
+.hero__rankings-preview_img {
+    grid-area: image;
+    box-shadow: var(--bs);
+}
+
+.hero__rankings-preview_number {
+    grid-area: number;
+}
+
+.hero__rankings-preview_title {
+    grid-area: title;
+}
+
+.hero__rankings-preview_desc {
+    grid-area: desc;
+}
+
